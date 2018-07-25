@@ -39,3 +39,13 @@ git checkout level3
 ```
 Incremental Features:
 * vue-router (async component)
+
+# level 4 demo
+
+```
+git checkout level4
+```
+Incremental Features:
+* pre-load data in server side with vuex
+* serialize the store to index.html
+* init client side store with the serialize data, then hydrate.
