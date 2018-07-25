@@ -14,8 +14,22 @@ npm run start
 
 ```
 git checkout level1
+npm install
+npm run start
 ```
 
 Features:
 1. index.html returned by server is pre-rendered.
 2. client-side hydration works. client-bundle take charge the page in the browser.
+
+
+# level 2 demo
+
+```
+git checkout level2
+npm install
+npm run start
+```
+
+Incremental Features:
+* vue-router (sync component)
