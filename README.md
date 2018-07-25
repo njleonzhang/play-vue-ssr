@@ -49,3 +49,10 @@ Incremental Features:
 * pre-load data in server side with vuex
 * serialize the store to index.html
 * init client side store with the serialize data, then hydrate.
+
+# level 5 demo
+```
+get checkout level5
+```
+Incremental Features:
+* handle the client side data fetch
