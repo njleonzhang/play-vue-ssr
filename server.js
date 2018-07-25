@@ -17,12 +17,11 @@ server.get('*', (req, res) => {
     title: 'hello',
     meta: `
       <meta charset="utf8">
-    `
+    `,
+    url: req.url
   }
 
-  createApp({
-    url: req.url
-  })
+  createApp(context) // context 会被 createApp 添加一个 store 属性，renderToString 的时候 init store 会被注入到 html 页面中
   .then(app => {
     renderer.renderToString(app, context, (err, html) => {
       if (err) {
