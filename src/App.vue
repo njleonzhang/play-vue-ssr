@@ -1,23 +1,11 @@
 <template>
   <div id='app'>
-    hello world
-    <div v-if='show'>show me</div>
     <div>
-      <button @click='toggle'>toggle</button>
+      I am the navigation bar
+      <router-link to="/home">Go to home</router-link>
+      <router-link to="/test">Go to test</router-link>
     </div>
+    <!-- router-view -->
+    <router-view></router-view>
   </div>
 </template>
-<script>
-export default {
-  data() {
-    return {
-      show: true
-    }
-  },
-  methods: {
-    toggle() {
-      this.show = !this.show
-    }
-  }
-}
-</script>

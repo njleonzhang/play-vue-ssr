@@ -2,7 +2,7 @@ const Vue = require('vue')
 const express = require('express')
 const server = express()
 const createRenderer = require('vue-server-renderer').createRenderer
-const app = require('./dist/server-bundle')
+const createApp = require('./dist/server-bundle').default
 
 const renderer = createRenderer({
   template: require('fs').readFileSync('./index.template.html', 'utf-8'),
@@ -19,10 +19,18 @@ server.get('*', (req, res) => {
     `
   }
 
-  renderer.renderToString(app.default(), context, (err, html) => {
+  const app = createApp({
+    url: req.url
+  })
+
+  renderer.renderToString(app, context, (err, html) => {
     if (err) {
-      res.status(500).end('Internal Server Error')
-      return
+      if (err.code === 404) {
+         res.status(404).end('Page not found')
+       } else {
+         res.status(500).end('Internal Server Error')
+       }
+       return
     }
 
     res.send(html)
