@@ -1,9 +1,9 @@
 # play-vue-ssr
-a vue ssr demo project
+Follow the [Vue SSR Guide](https://ssr.vuejs.org/guide/) to create a vue ssr demo project step by step.
 
-
-Have a try
+have a try:
 ```
+npm install
 npm run build
 npm run start
 ```
