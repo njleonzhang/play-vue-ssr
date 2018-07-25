@@ -27,9 +27,15 @@ Features:
 
 ```
 git checkout level2
-npm install
-npm run start
 ```
 
 Incremental Features:
 * vue-router (sync component)
+
+# level 3 demo
+
+```
+git checkout level3
+```
+Incremental Features:
+* vue-router (async component)
