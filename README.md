@@ -14,8 +14,9 @@ npm run start
 
 ```
 git checkout level1
-npm install
 npm run start
+
+access: http://localhost:8080/
 ```
 
 Features:
@@ -27,6 +28,8 @@ Features:
 
 ```
 git checkout level2
+
+access: http://localhost:8080/
 ```
 
 Incremental Features:
@@ -36,6 +39,8 @@ Incremental Features:
 
 ```
 git checkout level3
+
+access: http://localhost:8080/home
 ```
 Incremental Features:
 * vue-router (async component)
@@ -44,6 +49,8 @@ Incremental Features:
 
 ```
 git checkout level4
+
+access: http://localhost:8080/home
 ```
 Incremental Features:
 * pre-load data in server side with vuex
@@ -53,6 +60,8 @@ Incremental Features:
 # level 5 demo
 ```
 get checkout level5
+
+access: http://localhost:8080/home
 ```
 Incremental Features:
 * handle the client side data fetch
